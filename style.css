@@ -1,0 +1,41 @@
+  .container>* {
+    border: 3px solid gold;
+    background-color: rgb(120, 138, 103);
+    padding: 30px;
+  }
+
+  header {
+    grid-area: hed;
+  }
+
+  nav {
+    grid-area: nv;
+  }
+
+  main {
+    grid-area: ma;
+  }
+
+  #sid-bar {
+    grid-area: sid;
+  }
+
+  #advatais {
+    grid-area: ad;
+  }
+
+  footer {
+    grid-area: foo;
+  }
+
+  .container {
+    display: grid;
+    gap: 20px;
+    /* grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); */
+    grid-template-areas:
+      "hed hed hed hed"
+      "nv ma ma sid"
+      "nv ma ma ad"
+      "foo foo foo foo";
+  }
