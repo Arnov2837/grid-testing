@@ -31,6 +31,7 @@
   .container {
     display: grid;
     gap: 20px;
+    text-align: center;
     /* grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr); */
     grid-template-areas:
@@ -39,3 +40,35 @@
       "nv ma ma ad"
       "foo foo foo foo";
   }
+
+
+  /* testing mobile responsiv */
+
+
+  @media screen and (max-width:576px) {
+    .container {
+      grid-template-areas:
+        "hed"
+        "nv"
+        " ma"
+        "sid"
+        "ad"
+        "foo";
+
+    }
+
+  }
+
+  /* testing tablate responsiv */
+
+
+  @media screen and (min-width:576px) and (max-width:768px) {
+
+    .container {
+
+      grid-template-areas:
+        "hed hed hed "
+        "nv nv nv"
+        "sid ma ma "
+        "ad foo foo";
+    }
